@@ -1,0 +1,220 @@
+body{
+    background-color: #EEE;
+
+}
+.parent {
+    width: 600px;
+    height: 300px;
+    background-color: white;
+
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.parent .child-one {
+    width: 50%;
+    height: 100%;
+}
+.parent .child-one img{
+    width: 100%;
+    height: 100%;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.parent .child-two {
+    width: 50%;
+    height: 100%;
+}
+.parent .child-two h1 {
+    font-size: 17px;
+    padding: 30px 20px 25px;
+}
+.parent .child-two p {
+    padding: 0px 20px 20px;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.parent .child-two .content {
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    grid-template-columns: repeat(3,auto);
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.parent .child-two .content img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.parent .child-two .content .text{
+    text-align: left;
+    margin-left: -65px;
+
+}
+h2{
+    font-size: 12px;
+    margin: 10px 0px -10px 0px;
+}
+.parent .child-two .content .text p {
+    font-size: 10px;
+    margin-left: -20px;
+}
+
+.parent .child-two .content .shart {
+    z-index: 4;
+    background-color: #EEE;
+    height: 35px;
+    width: 35px;
+    margin-top: 9px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.parent .child-two .content .shart > img{
+    height: 60%;
+    width: 60%;
+    margin: 7px;
+
+}
+
+
+
+.moht{
+    display: none;
+}
+
+.parent .child-two  .mohtawa{
+    display: grid;
+    position: relative;
+    top: -125px;
+    left: 167px;
+    background-color: #49556b;
+    width: 170px;
+    height: 30px;
+    padding: 10px;
+    grid-template-columns: 80px 23px 23px 23px;
+    justify-content: space-between;
+    align-items: baseline;
+    justify-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.mohtawa::after{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #49556b transparent transparent transparent;
+    top: 49px;
+}
+.parent .child-two  .mohtawa span{
+    padding: 0px;
+    text-align: center;
+    font-size: 17px;
+    margin-top: -5px;
+}
+.parent .child-two  .mohtawa img{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 425px) {
+    .parent {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px auto;
+        width: auto;
+        height: 350px;
+    }
+    .parent .child-one {
+        width: 100%;
+    }
+    .parent .child-one img{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+    .parent .child-two {
+        width: 100%;
+    }
+
+
+
+    .parent .child-two  .mohtawa{
+        z-index: 2;
+        top: -66px;
+        left: 0px;
+        width: 95%;
+        height: 30px;
+        padding: 10px;
+        grid-template-columns: 100px 50px 50px 50px 1fr;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .mohtawa::after{
+        border: none;
+    }
+    /*
+    .mohtawa::before{
+        content: '';
+        position: absolute;
+        background-image: url(/images/icon-share.svg);
+        background-color: #686c74;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        left: 340px;
+        top: 8px;
+    }*/
+    /*
+    .parent .child-two  .mohtawa span{
+        padding: 0px;
+        text-align: center;
+        font-size: 17px;
+        margin-top: -5px;
+    }
+    .parent .child-two  .mohtawa img{
+        margin-top: 5px;
+    }*/
+
+
+}
